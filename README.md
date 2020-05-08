@@ -1,4 +1,4 @@
-# paykickstart-ipn-validator [![Build Status](https://travis-ci.com/YOUR-GITHUB-USERNAME/paykickstart-ipn-validator.svg?branch=master)](https://travis-ci.com/YOUR-GITHUB-USERNAME/paykickstart-ipn-validator)
+# paykickstart-ipn-validator [![Build Status](https://travis-ci.com/dassiorleando/paykickstart-ipn-validator.svg?branch=master)](https://travis-ci.com/dassiorleando/paykickstart-ipn-validator)
 
 > PayKickStart IPN validator
 

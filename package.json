@@ -13,7 +13,7 @@
 		"node": ">=8"
 	},
 	"scripts": {
-		"test": "echo \"TODO\""
+		"test": "node test.js"
 	},
 	"files": [
 		"index.js"
