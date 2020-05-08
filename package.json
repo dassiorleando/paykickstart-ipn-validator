@@ -1,0 +1,30 @@
+{
+	"name": "paykickstart-ipn-validator",
+	"version": "0.9.0",
+	"description": "A zero-dependency package that verifies incoming IPN notifications from PayKickStart.",
+	"license": "MIT",
+	"repository": "dassiorleando/paykickstart-ipn-validator",
+	"author": {
+		"name": "Dassi Orleando",
+		"email": "me@dassiorleando.xyz",
+		"url": "https://www.dassiorleando.xyz"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"test": "echo \"TODO\""
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"ipn",
+		"paykickstart",
+		"payment",
+		"validator",
+		"hash"
+	],
+	"dependencies": {},
+	"devDependencies": {}
+}
