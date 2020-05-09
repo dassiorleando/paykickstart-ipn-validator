@@ -7,13 +7,13 @@ const crypto = require('crypto');
  * @param secretKey Secret key defined into your campaign (INTEGRATIONS section), by default it's the env var PAYKICKSTART_SECRET_KEY
  */
 module.exports = function (ipn, secretKey = process.env.PAYKICKSTART_SECRET_KEY) {
-	if (typeof ipn !== 'object' || !secretKey) {
-		throw new Error('IPN data and secretKey are required!');
-	}
+    if (typeof ipn !== 'object' || !secretKey) {
+        throw new Error('IPN data and secretKey are required!');
+    }
 
-	const ipnHash = ipn.hash;    // Hash received
+    const ipnHash = ipn.hash;    // Hash received
 
-    // Sorting the keys alphabetically
+    // Sorting the keys alphabetically then picking the good values
     const sortedData = [];
     Object.keys(ipn).sort().forEach(function(key) {
         // Trim and ommit falsies values
