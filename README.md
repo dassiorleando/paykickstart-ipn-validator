@@ -21,6 +21,9 @@ const paykickstartIPNValidator = require('paykickstart-ipn-validator');
 
 paykickstartIPNValidator(ipn, secret);
 // => true or false
+
+paykickstartIPNValidator(ipn);  // Assuming the secret is defined by the env var
+// => true or false
 ```
 
 **Note:** The secret is optional, its default value is the env var *PAYKICKSTART_SECRET_KEY*. Good so that you keep your precious secretKey out of your your repo.
