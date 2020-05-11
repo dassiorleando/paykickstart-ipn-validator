@@ -1,6 +1,7 @@
-# paykickstart-ipn-validator [![Build Status](https://travis-ci.com/dassiorleando/paykickstart-ipn-validator.svg?branch=master)](https://travis-ci.com/dassiorleando/paykickstart-ipn-validator)
+# PayKickStart IPN Validator 
 
-> PayKickStart IPN validator
+[![Build Status](https://travis-ci.com/dassiorleando/paykickstart-ipn-validator.svg?branch=master)](https://travis-ci.com/dassiorleando/paykickstart-ipn-validator) ![npm](https://img.shields.io/npm/dt/paykickstart-ipn-validator) ![npm](https://img.shields.io/npm/v/paykickstart-ipn-validator)
+
 
 A zero-dependency package that verifies incoming IPN notifications from PayKickStart.
 
