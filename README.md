@@ -5,7 +5,7 @@
 
 A zero-dependency package that verifies incoming IPN notifications from PayKickStart.
 
-To better the funel of your App sold via a third party service you often need to do further actions once payment/refund/subscribe/unsubscribe operations are made via your sales/dashboard/landing pages, doing this without confirming the validity of the notification will fail your workflow.
+To better the funnel of your App sold via a third-party service you often need to do further actions once payment/refund/subscribe/unsubscribe operations are made via your sales/dashboard/landing pages, doing this without confirming the validity of the notification will fail your workflow as not only the intended party can send requests to your server (IPN receiver/controller).
 
 
 ## Install
