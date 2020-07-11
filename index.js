@@ -1,10 +1,15 @@
 'use strict';
 
+/**
+ * PayKickStart IPN validator
+ * @author dassiorleando
+ */
 const crypto = require('crypto');
 
 /**
- * @param ipn your ipn data from PayKickStart IPN request
- * @param secretKey Secret key defined into your campaign (INTEGRATIONS section), by default it's the env var PAYKICKSTART_SECRET_KEY
+ * @param {Object} ipn Your ipn data from PayKickStart IPN request
+ * @param {string} secretKey The secret key defined into your campaign (INTEGRATIONS section), by default it's the env var PAYKICKSTART_SECRET_KEY
+ * @returns {boolean} True if the IPN is correct, else false
  */
 module.exports = function (ipn, secretKey = process.env.PAYKICKSTART_SECRET_KEY) {
     if (typeof ipn !== 'object' || !secretKey) {
@@ -27,7 +32,9 @@ module.exports = function (ipn, secretKey = process.env.PAYKICKSTART_SECRET_KEY)
 
 /**
  * Builds the hash
- * @param {*} string 
+ * @param {string} string The string to get the hash from
+ * @param {string} secretKey The secret to use
+ * @returns {string} The hashed string
  */
 function getHash (string, secretKey) {
     var hmac = crypto.createHmac('sha1', secretKey);
